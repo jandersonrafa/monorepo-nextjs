@@ -1,0 +1,28 @@
+{
+  "root": "apps/ms-order-front-e2e",
+  "sourceRoot": "apps/ms-order-front-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/ms-order-front-e2e/cypress.json",
+        "devServerTarget": "ms-order-front:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "ms-order-front:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/ms-order-front-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["ms-order-front"]
+}

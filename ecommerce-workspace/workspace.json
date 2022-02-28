@@ -1,6 +1,10 @@
 {
   "version": 2,
   "projects": {
+    "ms-order-front": "apps/ms-order-front",
+    "ms-order-front-e2e": "apps/ms-order-front-e2e",
+    "ms-order-frontnx": "apps/ms-order-frontnx",
+    "ms-order-frontnx-e2e": "apps/ms-order-frontnx-e2e",
     "ms-product-front": "apps/ms-product-front",
     "ms-product-front-e2e": "apps/ms-product-front-e2e"
   }
