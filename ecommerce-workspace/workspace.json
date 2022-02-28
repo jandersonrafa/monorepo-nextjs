@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "ms-product-front": "apps/ms-product-front",
+    "ms-product-front-e2e": "apps/ms-product-front-e2e"
+  }
+}

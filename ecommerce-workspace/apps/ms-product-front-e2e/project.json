@@ -1,0 +1,28 @@
+{
+  "root": "apps/ms-product-front-e2e",
+  "sourceRoot": "apps/ms-product-front-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/ms-product-front-e2e/cypress.json",
+        "devServerTarget": "ms-product-front:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "ms-product-front:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/ms-product-front-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["ms-product-front"]
+}
