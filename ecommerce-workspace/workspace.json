@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "ms-common-lib": "libs/ms-common-lib",
     "ms-order-front": "apps/ms-order-front",
     "ms-order-front-e2e": "apps/ms-order-front-e2e",
     "ms-order-frontnx": "apps/ms-order-frontnx",

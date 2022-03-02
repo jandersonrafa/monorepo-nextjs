@@ -1,11 +1,17 @@
 import React from 'react';
 import PartPopper from '../../components/party-popper/party-popper';
+import { MsCommonLib } from '@ecommerce-workspace/ms-common-lib';
+import { CommonHello } from '@ecommerce-workspace/ms-common-lib';
+
+
+
+
 const ProductRegister = ({ products }) => {
 
   const handleSubmit = async (e) => {
     console.log("teste")
     e.preventDefault();
-    await fetch(`http://localhost:4200/api/product`, {
+    await fetch(`/api/product`, {
     // await fetch(`http://localhost:2010/product/save`, {
         method: 'POST',
         headers: {
@@ -42,6 +48,8 @@ const ProductRegister = ({ products }) => {
       <div>
         <h1>Courses  <PartPopper /></h1>
         <h1>Criar novo curso</h1>
+        <MsCommonLib/>
+        <CommonHello/>
         <form onSubmit={handleSubmit}>
           <label>
             Id:
@@ -54,8 +62,8 @@ const ProductRegister = ({ products }) => {
         <table>
           <thead>
             <tr>
-              <th width="40%">Id</th>
-              <th width="30%">Nome</th>
+              <th >Id</th>
+              <th >Nome</th>
             </tr>
           </thead>
           <tbody>

@@ -1,0 +1,23 @@
+{
+  "root": "libs/ms-common-lib",
+  "sourceRoot": "libs/ms-common-lib/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/ms-common-lib/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/ms-common-lib"],
+      "options": {
+        "jestConfig": "libs/ms-common-lib/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
