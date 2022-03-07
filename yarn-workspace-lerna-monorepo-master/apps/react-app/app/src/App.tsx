@@ -4,7 +4,7 @@ import { Routes } from '@react-app/routes';
 
 export const App = () => (
     <ThemeProvider>
-        Teste App2
+        Teste App2s
         <Routes />
     </ThemeProvider>
 );
